@@ -1,0 +1,52 @@
+﻿<Page x:Class="NewsApplication.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewsApplication"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="725"
+      MinHeight="650" MinWidth="725"
+      Title="HomePage" Foreground="#FF3C3CFF" >
+    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106pt"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="ChangeUser" Content="Смена пользователя"  HorizontalAlignment="Left" MouseDown="ChangeUserLabelClick" Margin="7,10,0,0" VerticalAlignment="Top" Foreground="#FF3C3CFF" Width="131" FontWeight="Bold"/>
+            <StackPanel HorizontalAlignment="Left" Height="342" Margin="7,79,0,0" VerticalAlignment="Top" Width="129">
+                <Label x:Name="Home" Content="Главная" FontSize="16" Foreground="#FF3C3CFF" FontWeight="Bold" MouseDown="HomePageMethodLabelClick"/>
+                <Label x:Name="MSDN" MouseDown="MSDNMethodLabelClick" Content="MSDN" Foreground="#FF3C3CFF" FontSize="14"/>
+                <Label x:Name="Media368" MouseDown="Media368MethodLabelClick" Content="368.Media" Height="30" Foreground="#FF3C3CFF" FontSize="14" HorizontalAlignment="Left" Width="95"/>
+                <Label x:Name="BELSATLabel" Content="BELSAT" FontSize="14" Foreground="#FF3C3CFF" MouseDown="BelsatLabelTouch"/>
+                <Label x:Name="LocalArticle" Content="Вывод списка &#xD;&#xA;новостей &#xD;&#xA;из базы&#xD;&#xA;данных" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="90" Foreground="#FF3C3CFF" FontSize="14" MouseDown="LocalArticleLabelClick"/>
+                <Label x:Name="label" Content="Добавление&#xD;&#xA;новых страниц" Foreground="#FF3C3CFF" FontSize="14" MouseDown="Develop"/>
+                <Label x:Name="label1" Content="Профиль" Foreground="#FF3C3CFF" FontSize="14" MouseDown="Myprofile"/>
+            </StackPanel>
+            <Image Source="Photos\vk_icon_resize.jpg" Width="20pt" Margin="10,-274,104,274" MouseDown="VK" RenderTransformOrigin="0.488,0.562" Height="650" Grid.Column="0"/>
+            <Grid Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" Margin="12,53,-201,0" VerticalAlignment="Top" Width="auto" Height="auto" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="Caption" FontWeight="Bold" FontFamily="Segoe UI" FontSize="20" HorizontalAlignment="Left" Margin="24,-41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+                <TextBlock x:Name="Content" FontSize="14" FontFamily="Segoe UI" HorizontalAlignment="Left" Margin="24,35,0,0" 
+                            TextWrapping="Wrap"  VerticalAlignment="Top" Height="auto" MaxWidth="800pt" Foreground="Black"/>
+                <ListBox x:Name="listBox"  Height="340" Visibility="Hidden" Margin="10,35,-220,0"  VerticalAlignment="Top" MinWidth="300pt" MaxWidth="700pt" Width="auto" />
+                <Button x:Name="button_MSDN" Content="Выбрать" HorizontalAlignment="Left" Visibility="Hidden" Margin="10,425,0,-46" VerticalAlignment="Top" Width="115" Click="ButtonMSDNMethod" Background="#FF3C3CFF" BorderBrush="Blue" Foreground="White"/>
+                <Button x:Name="buttonLocalArticle" Content="Выбрать" Visibility="Hidden" HorizontalAlignment="Left" Margin="14,430,0,-51" VerticalAlignment="Top" Width="111" Click="ButtonLoacalArticleMethod" Background="#FF3C3CFF" BorderBrush="Blue" Foreground="White"/>
+                <Button x:Name="buttonSelectMenu368" Content="Выбрать" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="22,425,0,-46" Click="ButtonSelectMenu" Background="#FF3C3CFF" BorderBrush="Blue" Foreground="White"  />
+                <Button x:Name="buttonSelectNews368" Content="Поиск новостей" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="24,425,0,-46" Click="ButtonSelectNews" Background="#FF3C3CFF" BorderBrush="Blue" Foreground="White" />
+                <Button x:Name="buttonBELSAT" Content="Выбрать" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="22,430,0,-51" Click="ButtonBelsatMethod" Background="#FF3C3CFF" BorderBrush="Blue" Foreground="White"/>
+
+            </Grid>
+
+
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>

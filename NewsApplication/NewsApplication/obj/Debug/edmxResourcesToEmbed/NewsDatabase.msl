@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище NewsApplicationModelContainer" CdmEntityContainer="NewsApplicationEntities">
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="NewsApplicationModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Article" ColumnName="Article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="NewsApplicationModel.Profile">
+        <MappingFragment StoreEntitySet="Profile">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="Hash" ColumnName="Hash" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="NewsApplicationModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewURLs">
+      <EntityTypeMapping TypeName="NewsApplicationModel.NewURL">
+        <MappingFragment StoreEntitySet="NewURL">
+          <ScalarProperty Name="New_URL" ColumnName="New_URL" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dates">
+      <EntityTypeMapping TypeName="NewsApplicationModel.Date">
+        <MappingFragment StoreEntitySet="Date">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="DATE1" ColumnName="DATE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

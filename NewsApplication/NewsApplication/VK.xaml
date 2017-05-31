@@ -1,0 +1,16 @@
+﻿<Page x:Class="NewsApplication.VK"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewsApplication"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="725"
+      MinHeight="650" MinWidth="725"
+      Title="VK" Loaded="Load">
+
+    <Grid>
+        <WebBrowser x:Name="webBrowser1" HorizontalAlignment="Left" Height="auto" Margin="10,10,0,0"  VerticalAlignment="Top" Width="auto" LoadCompleted="webBrowser1_LoadCompleted"/>
+
+    </Grid>
+</Page>

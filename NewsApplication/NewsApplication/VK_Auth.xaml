@@ -1,0 +1,12 @@
+﻿<Window x:Class="NewsApplication.VK_Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsApplication"
+        mc:Ignorable="d"
+        Title="VK_Auth" Height="600"  MinHeight="550" MinWidth="725"  Loaded="Window_Loaded">
+    <Grid>
+        <WebBrowser x:Name="webBrowser1" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto" Margin="10,10,0,0" LoadCompleted="webBrowser1_LoadCompleted"/>
+    </Grid>
+</Window>
